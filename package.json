@@ -1,0 +1,37 @@
+{
+  "name": "super-color",
+  "version": "1.0.0",
+  "description": "Small & Fast Color conversion library.",
+  "main": "./src/index.js",
+  "types": "./src/types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaudpfu/super-color.git"
+  },
+  "keywords": [
+    "color",
+    "conversion",
+    "color",
+    "rgba",
+    "hsla",
+    "hsva",
+    "hexa",
+    "web",
+    "color",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Arnaud Pfundstein",
+  "license": "GPL-3.0-or-later",
+  "files": ["lib/**/*"],
+  "bugs": {
+    "url": "https://github.com/arnaudpfu/super-color/issues"
+  },
+  "homepage": "https://github.com/arnaudpfu/super-color#readme",
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  }
+}
