@@ -1,16 +1,17 @@
 import { SuperColorAttr, SuperColorFormat, SuperHexColor, SuperHslaColor, SuperHsvaColor, SuperRgbaColor } from './types';
 export declare class SuperColor {
-    r: number;
-    g: number;
-    b: number;
-    h: number;
-    sLightness: number;
-    l: number;
-    sValue: number;
-    v: number;
-    a: number;
-    format: SuperColorFormat;
+    private r;
+    private g;
+    private b;
+    private h;
+    private sLightness;
+    private l;
+    private sValue;
+    private v;
+    private a;
+    private format;
     constructor(color: string | SuperColorAttr);
+    getFormat(): SuperColorFormat;
     setFormat(format: SuperColorFormat): void;
     setAlpha(alpha: number): void;
     setHue(hue: number): void;

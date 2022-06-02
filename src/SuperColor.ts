@@ -20,16 +20,16 @@ import {
 } from './types';
 
 export class SuperColor {
-    public r: number; //[0-255]
-    public g: number; //[0-255]
-    public b: number; //[0-255]
-    public h: number; //[0-360]
-    public sLightness: number; //[0-1]
-    public l: number; //[0-1]
-    public sValue: number; //[0-1]
-    public v: number; //[0-1]
-    public a: number; //[0-1]
-    public format: SuperColorFormat;
+    private r: number; //[0-255]
+    private g: number; //[0-255]
+    private b: number; //[0-255]
+    private h: number; //[0-360]
+    private sLightness: number; //[0-1]
+    private l: number; //[0-1]
+    private sValue: number; //[0-1]
+    private v: number; //[0-1]
+    private a: number; //[0-1]
+    private format: SuperColorFormat;
 
     constructor(color: string | SuperColorAttr) {
         if (typeof color === 'string') {
@@ -71,6 +71,10 @@ export class SuperColor {
             this.a = color.a;
             this.format = color.format;
         }
+    }
+
+    getFormat(): SuperColorFormat {
+        return this.format;
     }
 
     setFormat(format: SuperColorFormat) {
