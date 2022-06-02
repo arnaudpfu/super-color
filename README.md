@@ -26,7 +26,7 @@ superColor.setAlpha(0.5);
 console.log(superColor.toString()); // rgba(255, 0, 0, 0.5)
 
 superColor.setHsv({ h: 100, v: 0.8 });
-console.log(superColor.toString()); // hsva(100, 100, 80, 0.5)
+console.log(superColor.toString()); // rgba(67, 204, 0, 0.5)
 
 superColor.setFormat("hex");
 console.log(superColor.toString()); // #43CC0080
